@@ -1,6 +1,6 @@
 <%@ include file="/head.jsp" %>
 
-<h1>Ajout Un Message au sujet</h1>
+<h1>Ajouter un Message au sujet <c:out value = "${sujet.sujet}"/></h1>
 <form method="POST" action="">
 	<label>Message</label>
 	<textarea rows="" cols="" name=message></textarea>
