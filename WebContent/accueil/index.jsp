@@ -18,7 +18,14 @@
 										<c:forEach items="${lstMessage}" var="message">
 											<c:if test="${message.sujet.id == sujet.id }">
 												<li class="list-group-item">
-													<c:out value = "${message.texte}"/>
+													<div class="row">
+														<div class="col-sm-3">
+															<c:out value = "${message.dateCreation}"/>
+														</div>
+														<div class="col-sm-9">
+															<c:out value = "${message.texte}"/>
+														</div>
+													</div>
 												</li>
 											</c:if>
 										</c:forEach>

@@ -2,7 +2,6 @@ package controller;
 
 import entity.Message;
 import entity.Sujet;
-import repository.CategorieRepository;
 import repository.MessageRepository;
 import repository.SujetRepository;
 
@@ -40,8 +39,8 @@ public class AjoutMessageController extends HttpServlet {
 		
 		
 		message.setSujet(sujet);
-		message.setDateCreation(sujet.getDateCreation());
-		message.setDateUpdate(sujet.getDateUpdate());
+		message.setDateCreation(new Date());
+		message.setDateUpdate(new Date());
 		message.setTexte(req.getParameter("message"));
 		message.setId((new Long(daoM.lectureMessage().size() + 1)));
 
