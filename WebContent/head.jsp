@@ -12,5 +12,6 @@
 
 <title></title>
 </head>
-<body><%@ include file="/menu.jsp" %>
+<body>
+<%@ include file="/menu.jsp" %>
 <div class="container">
